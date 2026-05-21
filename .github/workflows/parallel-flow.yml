@@ -26,7 +26,7 @@ jobs:
               run: echo "This is not the main branch. Running tests..."
             
             - name: Run tests
-              run : npm test
+              run : echo "Running tests for build-and-test-1..."
 
             - name: Debug message
               if: env.DEBUG == 'true'
@@ -53,7 +53,7 @@ jobs:
               run: echo "This is not the main branch. Running tests..."
             
             - name: Run tests
-              run : npm test
+              run : echo "Running a different set of tests..."
 
             - name: Debug message
               if: env.DEBUG == 'true'
