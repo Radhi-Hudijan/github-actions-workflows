@@ -21,7 +21,13 @@ jobs:
             - name: use node.js latest
               uses: actions/setup-node@v3
               with:
-                    node-version: latest
+                node-version: latest
+            
+            - name: Install dependencies
+              run: npm ci
+            
+            - name: Run tests
+              run : npm test
 
             - name: Print message
-              run: echo "Hello, World!"
+              run: echo "Tests completed successfully!"
